@@ -5,8 +5,9 @@
 # https://creativecommons.org/licenses/by-sa/3.0/legalcode
 # Copyright (c) 2020-2022 Nathaniel Steven Henry Brown [0+nate@purefame.com]
 
-version = 'p.v7.0.0'
-# Created: 20200321 (March 21, 2020)
+version = 'p.v5.7.0'
+# Created: 20200321
+# Modified: 20250919+
 # Sources: 
 #   https://www.geeksforgeeks.org/taking-input-in-python/
 #   https://stackoverflow.com/questions/9573244/how-to-check-if-the-string-is-empty
@@ -33,23 +34,23 @@ import subprocess
 import socket
 import uuid
 
-def verify_valid_host_running_script_via_external():
-    valid_hosts = ['204.244.181.88']
+#def verify_valid_host_running_script_via_external():
+#    valid_hosts = ['204.244.181.88']
+#
+#    def get_ip_address():
+#        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+#        s.connect(("8.8.8.8", 80))
+#        return s.getsockname()[0]
+#
+#    ipaddress_by_socket = get_ip_address()
+#
+#    if not ipaddress_by_socket in valid_hosts:
+#        if '10.' != ipaddress_by_socket[:3] and '192.168.' != ipaddress_by_socket[:8]:
+#            print('Host ("' + ipaddress_by_socket + '") was not found in valid list')
+#            exit(0)
 
-    def get_ip_address():
-        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        s.connect(("8.8.8.8", 80))
-        return s.getsockname()[0]
 
-    ipaddress_by_socket = get_ip_address()
-
-    if not ipaddress_by_socket in valid_hosts:
-        if '10.' != ipaddress_by_socket[:3] and '192.168.' != ipaddress_by_socket[:8]:
-            print('Host ("' + ipaddress_by_socket + '") was not found in valid list')
-            exit(0)
-
-
-verify_valid_host_running_script_via_external()
+#verify_valid_host_running_script_via_external()
 
 top_default = 1
 default_values = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!abcdefghijklmnopqrstuvwxyz-@#$%^&*()=_+<>?,./;':\"[]{}~`ÅåǺǻḀḁẚĂăẶặẮắẰằẲẳẴẵȂȃÂâẬậẤấẦầẪẫẨẩẢảǍǎȺⱥȦȧǠǡẠạÄäǞǟÀàȀȁÁáĀā̀ÃãĄą̲́̃ᶏĆćĈĉČčĊċḈḉƇƈ̈ȻȼÇçĐđƊɗḊḋḌḍḐḑḒḓĎďḎḏᵭᶁᶑĔĕḜḝȆȇÊê̄̌ỀềẾếỂểỄễỆệẺẻḘḙĚěɆɇĖėẸẹËëÈè̩ȄȅÉéĒēḔḕḖḗẼẽḚḛĘęȨȩᶒƑƒḞḟᵮᶂǴǵǤǥĜĝǦǧĞğĢģƓɠĠġḠḡᶃĤĥȞȟĦħḨḩⱧⱨẖḤḥḢḣḦḧḪḫꞕỊịĬĭÎîǏǐƗɨÏïḮḯÍíÌìȈȉĮįĪīᶖỈỉȊȋĨĩḬḭᶤĵǰɈɉ̇ƘƙḰḱǨǩḲḳĶķᶄⱩⱪḴḵĺŁłĽľḸḹĻļĿŀḶḷḺḻḼḽȽƚⱠⱡḾḿṀṁṂṃᵯŃńÑñŇňǸǹṄṅṆṇŅņṈṉṊṋᵰᶇØøǾǿᶱÖöȪȫÓóÒòÔôỐốỒồỔổỖỗỘộǑǒŐőŎŏȎȏȮȯȰȱỌọƟɵƠơỚớỜờỠỡỢợỞởỎỏŌōṒṓṐṑÕõȬȭṌṍṎṏǪǫȌȍǬǭṔṕṖṗⱣᵽƤƥᵱᶈʠɊɋŔŕɌɍŘřŖŗṘṙȐȑȒȓṚṛṜṝṞṟⱤɽᵲᵳᶉŚśṠṡẛṨṩṤṥṢṣŜŝṦṧŠšŞşȘșᶊⱾȿᵴᶳŤťṪṫẗŢţṬṭƮʈȚțƫṰṱṮṯŦŧȾⱦƬƭᵵᶵŬŭɄʉᵾᶶỤụÜüǛǜǗǘǙǚǕǖṲṳÚúÙùÛûṶṷǓǔȖȗŰűƯưỨứỪừỬửỰựỮỦủŪūṺṻŨũṸṹṴṵᶙŲųȔȕŮůṼṽṾṿƲʋᶌẂẃẀẁŴŵẄẅẆẇẈẉẘẌẍẊẋᶍÝýỲỳŶŷŸÿỸỹẎẏỴỵẙỶỷȲȳɎɏƳƴŹźẐẑŽžŻżẒẓẔẕƵƶᵶᶎⱫⱬ÷™®©℗|\\πÆæŒœʊɛəθɪʃʌɒʒʁɹΦ∂ΣℓαΒβΓγΔδΕεΖζΗηΘΙιΚκΛλΜμΝνΞξΟοΠΡρσςΤτΥυφϕΧχΨψΩω∞"
