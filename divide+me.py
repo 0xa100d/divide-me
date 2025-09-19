@@ -3,7 +3,7 @@
 
 # LICENSE CREATIVE_COMMONS-ATTRIBUTION_SHARE_ALIKE
 # https://creativecommons.org/licenses/by-sa/3.0/legalcode
-# Copyright (c) 2020-2022 Nathaniel Steven Henry Brown [0+nate@purefame.com]
+# Copyright (c) 2020-2025 Nathaniel Steven Henry Brown [0+nate@purefame.com]
 
 version = 'p.v5.7.0'
 # Created: 20200321
